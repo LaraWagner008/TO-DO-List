@@ -1,0 +1,115 @@
+body {
+    background-image: url('background.png'); /* Путь к изображению */
+    background-size: cover;       /* Растянуть на весь экран */
+    background-position: center;  /* Центрировать */
+    background-repeat: no-repeat; /* Не повторять */
+    background-attachment: fixed; /* Фиксировать фон (опционально) */
+    margin: 0;                   /* Убрать отступы */
+    min-height: 100vh;           /* Минимальная высота = весь экран */
+}
+
+h1 {
+    margin-top: 200px;
+    color:#1e90ff;
+    text-align: center;
+    font-size: 50px;
+    font-family: arial;
+    background: linear-gradient(to top, #1e90ff, #00bfff); /* Градиент */
+    background-clip: text; /* Стандартное свойство */
+    color: transparent; /* Делаем текст прозрачным, чтобы был виден градиент */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.plus-button, .pen-button, .trash-button {
+    border: none;
+    border-radius: 50%; /*круглая кнопка*/
+    align-items: center;
+    background: transparent; /* Прозрачный фон */
+    cursor: pointer;
+}
+.plus-button:active {
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
+.pen-button:active {
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
+.trash-button:active {
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+}
+
+.plus-icon {
+    width: 40px;
+    height: 40px;
+}
+.pen-icon {
+    width: 20px;
+    height: 20px;
+}
+.trash-icon {
+    width: 25px;
+    height: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.input {
+    font-size: 18px; /* Размер текста */
+    height: 40px;
+    width: 500px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+}
+
+input:focus {
+    outline: none; /* Убираем обводку при нажатии на input */
+}
+
+ /* Список */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.task-item {
+    padding: 10px;
+    margin: 5px 0px;
+    margin-left: -40px;
+    width: 450px;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    font-size:large;
+    font-family: Arial;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.inputText {
+    border:none;
+    font-size:large;
+    font-family: Arial;
+    color: rgba(0, 0, 0, 0.75);
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
