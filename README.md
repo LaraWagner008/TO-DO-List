@@ -21,4 +21,4 @@
 5. Используйте кнопку корзины для удаления
 
 ## Посмотреть вживую:
-https://github.com/LaraWagner008/TO-DO-List.git
+https://larawagner008.github.io/TO-DO-List/
