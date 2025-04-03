@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function saveTasks() {
         localStorage.setItem('tasks', list.innerHTML);
+        saveTasks();
     }
 
     // Функция для назначения обработчиков всем задачам
