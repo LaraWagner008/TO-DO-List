@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function toggleTask() {
         this.parentElement.classList.toggle('completed'); // Зачеркивается при нажатии на область с задачей, а не только на текст задачи
+        saveTasks();
     }
 
     function editTask() {

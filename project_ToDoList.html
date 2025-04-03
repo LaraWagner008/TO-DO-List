@@ -1,0 +1,37 @@
+<!--Коментарии-->
+<!DOCTYPE html> 
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="project_ToDoList.css"> <!--Подключение CSS файла-->
+        <meta charset="UTF-8"> <!--Кодировка для браузера-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+        <title>TO DO List</title> <!--Название вкладки-->
+        <link rel="icon" type="image/png" href="check.png">
+    </head>
+    
+<body>
+    <h1 id="title">TO DO List</h1>
+
+    <div class="input-container">
+            <input class="input" type="text" placeholder="Write the task" maxlength="46">
+            
+            <button class="plus-button">
+                <img class="plus-icon" src="plus.png" alt="ADD">
+            </button>
+        </div>
+
+<!--
+            <button class="pen-button">
+                <img class="pen-icon" src="pen.png" alt="EDIT">
+            </button>
+
+            <button class="trash-button">
+                <img class="trash-icon" src="trash.png" alt="DELETE">
+            </button>
+            -->
+
+            <ul class="list"></ul>
+
+    <script src="project_ToDoList.js"></script>
+</body>
+</html>
